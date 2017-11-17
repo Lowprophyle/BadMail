@@ -29,4 +29,8 @@ vie.addListener('new-window', (e) => {
     }
 })
 
+var ses = remote.getCurrentWebContents().session
+ses.getCacheSize((size)=>{
+    console.log(size)
+})
 

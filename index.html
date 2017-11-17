@@ -51,7 +51,7 @@
                     <a id='link5'>Keep</a>
                 </li>
                 <li>
-                    <a id="clear">Clear</a>
+                    <a id="clear" >Clear</a>
                 </li>
             </ul>
         </div>
@@ -66,6 +66,24 @@
     <script>
         require('./linker');
         require('./viewer');
+    </script>
+    <script>
+        const {
+            remote
+        } = require('electron')
+        var ses = remote.getCurrentWebContents().session
+
+        //function cle() {
+        //    if (confirm("Deletes Data", "Are you sure?")) {
+        //        ses.clearCache(() => {
+        //            ses.getCacheSize((size) => {
+        //                console.log(size);
+        //            });
+        //        });
+        //        ses.clearStorageData();
+//
+        //    }
+        //}
     </script>
 </body>
 

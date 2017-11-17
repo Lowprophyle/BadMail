@@ -50,9 +50,12 @@
                 <li>
                     <a id='link5'>Keep</a>
                 </li>
-                <!-- <li>
+                <li>
+                    <a id='link7'>Pocket</a>
+                </li>
+                <li>
                     <a id="clear">Clear</a>
-                </li> -->
+                </li>
             </ul>
         </div>
     </nav>
@@ -63,8 +66,11 @@
         style='height: 540px; width: 800px' partition="persist:par1"></webview>
     <webview id='web4' src='https://moodle.nottingham.ac.uk' style='height: 540px; width: 800px' partition="persist:par1"></webview>
     <webview id='web5' src='https://keep.google.com' style='height: 540px; width: 800px' partition="persist:par1 and par2"></webview>
+    <webview id='web7' src='https://getpocket.com/login' style='height: 540px; width: 800px' partition="persist:par1"></webview>
+
     <script>
-        require('./renderer.js')
+        require('./linker');
+        require('./viewer');
     </script>
 </body>
 

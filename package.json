@@ -1,0 +1,22 @@
+{
+  "name": "BitchMail",
+  "version": "0.0.3",
+  "description": "Fuck your mail",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./",
+    "help": "electron-packager --help",
+    "build": "electron-packager ./ --name=BitchMail --electron-version=1.8.1 --overwrite --icon=waves-512.png --platform=linux --arch=x64 --out=./releases",
+    "debian": "electron-installer-debian --src=./releases/BitchMail-linux-x64 --electron-version=1.8.1 --overwrite --icon=waves-512.png --arch=amd64 --dest=./releases "
+  },
+  "author": "Raimi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "electron": "^1.8.1",
+    "electron-installer-debian": "^0.7.1",
+    "electron-packager": "^9.1.0",
+    "jquery": "^3.2.1"
+  }
+}

@@ -9,6 +9,10 @@ webview.addEventListener('new-window', (e) => {
   }
 })
 
+webview.addEventListener('will-navigate', (e) => {
+    webview.loadURL(e)
+})
+
 const win = remote.getCurrentWindow()
 win.addListener('new-window', (e) => {
     const protocol = url.parse(e.url).protocol
@@ -16,3 +20,13 @@ win.addListener('new-window', (e) => {
         shell.openExternal(e.url)
     }
 })
+
+const vie = remote.getCurrentWebContents()
+vie.addListener('new-window', (e) => {
+    const protocol = url.parse(e.url).protocol
+    if (protocol === 'http:' || protocol === 'https:') {
+        window.open(e.url)
+    }
+})
+
+

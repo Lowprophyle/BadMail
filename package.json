@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ./",
     "help": "electron-packager --help",
-    "build": "electron-packager ./ --name=BitchMail --electron-version=1.8.1 --overwrite --icon=icon.png --platform=linux --arch=x64 --out=./releases",
-    "debian": "electron-installer-debian --src=./releases/BitchMail-linux-x64 --electron-version=1.8.1 --overwrite --icon=icon.png --arch=amd64 --dest=./releases "
+    "build": "electron-packager ./ --name=BadMail --electron-version=1.8.1 --overwrite --icon=icon.png --platform=linux --arch=x64 --out=./releases",
+    "debian": "electron-installer-debian --src=./releases/BadMail-linux-x64 --electron-version=1.8.1 --overwrite --icon=icon.png --arch=amd64 --dest=./releases "
   },
-  "author": "Raimi",
+  "author": "Raymond",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",

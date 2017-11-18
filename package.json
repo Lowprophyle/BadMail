@@ -13,9 +13,11 @@
   "author": "Raymond",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "electron": "^1.8.1",
     "electron-installer-debian": "^0.7.1",
     "electron-packager": "^9.1.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
   }
 }

@@ -29,6 +29,9 @@
                         <li>
                             <a id='link6'>Raymond</a>
                         </li>
+                        <li>
+                            <a id="add-email">Add Email</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -51,21 +54,24 @@
                     <a id='link5'>Keep</a>
                 </li>
                 <li>
-                    <a id="clear" >Clear</a>
+                    <a id="clear">Clear</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <webview id='web1' src='https://inbox.google.com' style='height: 540px; width: 800px' partition="persist:par1"></webview>
-    <webview id='web6' src='https://inbox.google.com' style='height: 540px; width: 800px' partition="persist:par2"></webview>
-    <webview id='web2' src='https://web.whatsapp.com' style='height: 540px; width: 800px' partition="persist:par1"></webview>
-    <webview id='web3' src='https://adfs.nottingham.edu.my/adfs/ls/?username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline'
-        style='height: 540px; width: 800px' partition="persist:par1"></webview>
-    <webview id='web4' src='https://moodle.nottingham.ac.uk' style='height: 540px; width: 800px' partition="persist:par1"></webview>
-    <webview id='web5' src='https://keep.google.com' style='height: 540px; width: 800px' partition="persist:par1"></webview>
+    <div id="webviews">
+        <webview id='web1' src='https://inbox.google.com' style='height: 540px; width: 800px' partition="persist:par1"></webview>
+        <webview id='web6' src='https://inbox.google.com' style='height: 540px; width: 800px' partition="persist:par2"></webview>
+        <webview id='web2' src='https://web.whatsapp.com' style='height: 540px; width: 800px' partition="persist:par1"></webview>
+        <webview id='web3' src='https://adfs.nottingham.edu.my/adfs/ls/?username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline'
+            style='height: 540px; width: 800px' partition="persist:par1"></webview>
+        <webview id='web4' src='https://moodle.nottingham.ac.uk' style='height: 540px; width: 800px' partition="persist:par1"></webview>
+        <webview id='web5' src='https://keep.google.com' style='height: 540px; width: 800px' partition="persist:par1"></webview>
+    </div>
     <script>
         require('./linker');
         require('./viewer');
+        require('./ipcee');
     </script>
 </body>
 

@@ -61,7 +61,7 @@ $(document).ready(function () {
     });
 
     $('#clear').click(
-        ()=>{
+        () => {
             console.log('data delete');
             if (confirm('Are you sure?')) {
                 ses.clearStorageData();
@@ -73,4 +73,13 @@ $(document).ready(function () {
             }
         }
     );
+    if ($('#add-email').text() === 'Add Email') {
+        $('#add-email').click(() => {
+            var webview = '<webview src="https://github.com" id="web8"></webview>';
+            $(webview).appendTo('#webviews');
+            $('webview').hide()
+            $('#web8').show()
+            $('#add-email').text('Secondary')
+        })
+    }
 });

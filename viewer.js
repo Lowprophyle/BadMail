@@ -10,7 +10,7 @@ webview.addEventListener('new-window', (e) => {
 })
 
 webview.addEventListener('will-navigate', (e) => {
-    webview.loadURL(e)
+    webview.loadURL(e);
 })
 
 const win = remote.getCurrentWindow()
@@ -33,4 +33,3 @@ var ses = remote.getCurrentWebContents().session
 ses.getCacheSize((size)=>{
     console.log(size)
 })
-

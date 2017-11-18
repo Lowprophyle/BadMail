@@ -1,12 +1,25 @@
-const { app, BrowserWindow } = require('electron');
+const {
+    app,
+    BrowserWindow,
+    ipcMain
+} = require('electron');
 
 let mainWindow;
 
-app.on('ready', ()=>{
+function createWindow(url) {
+    var win = new BrowserWindow({
+        width: 400,
+        height: 400
+    });
+    win.loadURL(url)
+
+}
+
+app.on('ready', () => {
     mainWindow = new BrowserWindow({
-        maxHeight:620,
+        maxHeight: 620,
         maxWidth: 800,
-        minHeight:620,
+        minHeight: 620,
         minWidth: 800,
         frame: true,
         transparent: true
@@ -14,6 +27,6 @@ app.on('ready', ()=>{
     mainWindow.loadURL(`file://${__dirname}/index.html`);
 });
 
-app.on('quit', ()=>{
+app.on('quit', () => {
     mainWindow = null;
 });

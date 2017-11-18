@@ -9,6 +9,7 @@
     <script>
         require("./node_modules/bootstrap/dist/js/bootstrap.min.js")
     </script>
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,13 +30,13 @@
                         <li>
                             <a id='link6'>Raymond</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a id="add-email">Add Email</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li>
-                    <a id='link2'>Whatsapp</a>
+                    <a id='link2'>WhatsApp</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nottingham
@@ -54,6 +55,9 @@
                     <a id='link5'>Keep</a>
                 </li>
                 <li>
+                    <a id='link7'>GitHub</a>
+                </li>
+                <li>
                     <a id="clear">Clear</a>
                 </li>
             </ul>
@@ -67,6 +71,7 @@
             style='height: 540px; width: 800px' partition="persist:par1"></webview>
         <webview id='web4' src='https://moodle.nottingham.ac.uk' style='height: 540px; width: 800px' partition="persist:par1"></webview>
         <webview id='web5' src='https://keep.google.com' style='height: 540px; width: 800px' partition="persist:par1"></webview>
+        <webview id='web7' src='https://github.com/login' style='height: 540px; width: 800px' partition="persist:par1"></webview>
     </div>
     <script>
         require('./linker');

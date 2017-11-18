@@ -12,7 +12,7 @@ $(document).ready(function () {
         $('#web4').hide();
         $('#web5').hide();
         $('#web6').hide();
-
+        $('#web7').hide();
     });
     $("#link2").click(function () {
         $('#web2').show();
@@ -21,7 +21,7 @@ $(document).ready(function () {
         $('#web4').hide();
         $('#web5').hide();
         $('#web6').hide();
-
+        $('#web7').hide();
     });
     $("#link3").click(function () {
         $('#web3').show();
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('#web4').hide();
         $('#web5').hide();
         $('#web6').hide();
-
+        $('#web7').hide();
     });
     $("#link4").click(function () {
         $('#web4').show();
@@ -39,7 +39,7 @@ $(document).ready(function () {
         $('#web3').hide();
         $('#web5').hide();
         $('#web6').hide();
-
+        $('#web7').hide();
     });
     $("#link5").click(function () {
         $('#web5').show();
@@ -48,7 +48,7 @@ $(document).ready(function () {
         $('#web3').hide();
         $('#web4').hide();
         $('#web6').hide();
-
+        $('#web7').hide();
     });
     $("#link6").click(function () {
         $('#web6').show();
@@ -57,13 +57,22 @@ $(document).ready(function () {
         $('#web3').hide();
         $('#web4').hide();
         $('#web5').hide();
-
+        $('#web7').hide();
+    });
+    $("#link7").click(function () {
+        $('#web7').show();
+        $('#web1').hide();
+        $('#web2').hide();
+        $('#web3').hide();
+        $('#web4').hide();
+        $('#web5').hide();
+        $('#web6').hide();
     });
 
     $('#clear').click(
         () => {
             console.log('data delete');
-            if (confirm('Are you sure?')) {
+            if (confirm('Clears your cache', 'Are you sure?')) {
                 ses.clearStorageData();
                 ses.clearCache(() => {
                     ses.getCacheSize((size) => {
@@ -73,13 +82,4 @@ $(document).ready(function () {
             }
         }
     );
-    if ($('#add-email').text() === 'Add Email') {
-        $('#add-email').click(() => {
-            var webview = '<webview src="https://github.com" id="web8"></webview>';
-            $(webview).appendTo('#webviews');
-            $('webview').hide()
-            $('#web8').show()
-            $('#add-email').text('Secondary')
-        })
-    }
 });

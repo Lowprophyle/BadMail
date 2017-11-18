@@ -21,8 +21,7 @@ app.on('ready', () => {
         maxWidth: 800,
         minHeight: 620,
         minWidth: 800,
-        frame: true,
-        transparent: true
+        
     });
     mainWindow.loadURL(`file://${__dirname}/index.html`);
 });

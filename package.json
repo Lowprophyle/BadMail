@@ -1,6 +1,6 @@
 {
   "name": "BadMail",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "description": "Destroys your mail",
   "main": "index.js",
   "scripts": {

@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ./",
     "help": "electron-packager --help",
-    "package:linux": "electron-packager ./ --name=BadMail --electron-version=1.8.1 --overwrite --icon=icon.png --platform=linux --arch=x64 --out=./releases",
-    "debian": "electron-installer-debian --src=./releases/BadMail-linux-x64 --electron-version=1.8.1 --overwrite --icon=icon.png --arch=amd64 --dest=./releases ",
+    "package:linux": "electron-packager ./ --name=BadMail --electron-version=1.8.1 --overwrite --icon=assets/icon.png --platform=linux --arch=x64 --out=./releases",
+    "debian": "electron-installer-debian --src=./releases/BadMail-linux-x64 --electron-version=1.8.1 --overwrite --icon=assets/icon.png --arch=amd64 --dest=./releases ",
     "build:linux": "npm run package:linux && npm run debian"
   },
   "author": "Raymond",

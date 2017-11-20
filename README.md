@@ -6,6 +6,7 @@ The viewers currently use the `<webview>` element of [Electron](https://electron
 
 ### To-do List
 - [x] Added GitHub viewer
+- [x] Update Package.json
 - [ ] Make unresizable view for Mac
 - [ ] Fix frame properties for Mac
 - [ ] ...

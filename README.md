@@ -10,6 +10,24 @@ The viewers currently use the `<webview>` element of [Electron](https://electron
 - [ ] Fix frame properties for Mac
 - [ ] ...
 
+## Build From Source
+
+Packaging works for linux only.
+
+```Bash
+# Install npm packages -- REQUIRED
+$ npm install
+
+# Run Program without packaging
+$ npm start
+
+# Make application
+$ npm run package:linux
+
+# Build debian package
+$ npm run build:linux
+
+```
 
 
 

@@ -10,7 +10,6 @@ The viewers currently use the `<webview>` element of [Electron](https://electron
 - [ ] Fix frame properties for Mac
 - [ ] ...
 
-### Third Party
 
 
 

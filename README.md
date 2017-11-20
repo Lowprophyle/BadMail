@@ -5,6 +5,7 @@ Personal email software perfect for a student of University of Nottingham Malays
 The viewers currently use the `<webview>` element of [Electron](https://electron.atom.io). I plan to use something more dedicated in the releases.
 
 ### To-do List
+- [ ] Add Going Back Function
 - [x] Added GitHub viewer
 - [x] Update Package.json
 - [ ] Make unresizable view for Mac

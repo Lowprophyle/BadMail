@@ -25,7 +25,7 @@ const vie = remote.getCurrentWebContents()
 vie.addListener('new-window', (e) => {
     const protocol = url.parse(e.url).protocol
     if (protocol === 'http:' || protocol === 'https:') {
-        window.open(e.url)
+        shell.openExternal(e.url)
     }
 })
 
